@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 
   <PropertyGroup>
-    <TargetFrameworks>net45;net462;netcoreapp3.0;net5.0-windows7.0</TargetFrameworks>
+    <TargetFrameworks>net7.0-windows10.0.19041.0</TargetFrameworks>
     <UseWPF>true</UseWPF>
     <NeutralLanguage>en-US</NeutralLanguage>
     <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);GetDocumentationFile</TargetsForTfmSpecificBuildOutput>
@@ -19,10 +19,6 @@
 
   <ItemGroup>
     <None Include="Properties\DesignTimeResources.xaml" />
-  </ItemGroup>
-
-  <ItemGroup Condition="!$(DefineConstants.Contains('NET47_OR_NEWER'))">
-    <PackageReference Include="System.ValueTuple" Version="4.5.0" />
   </ItemGroup>
 
   <ItemGroup>
